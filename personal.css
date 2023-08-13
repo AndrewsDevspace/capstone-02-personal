@@ -1,0 +1,159 @@
+/* * * * * * * * * * *
+* The Navigation Bar *
+* * * * * * * * * * */
+
+#page-top {
+  position: sticky;
+  top: 0px;
+  z-index: 99;
+  
+  /*background-color: inherit;*/
+  background-image: url("./assets/sandstone.jpg");
+  background-repeat: repeat-x;
+  background-position: center center;
+}
+
+.nav-link-mybg {
+  background-color: rgba(0, 0, 0, .33);
+  color: white;
+  margin-left: 0.5rem;
+}
+.nav-link-mybg:hover {
+  color: yellow;
+}
+.nav-link.active {
+  color: darkgray!important;
+  background-color: yellow!important;
+  padding: 0.4rem 0.9rem;
+  border: 0.1rem solid white;
+}
+
+/* Disappearing Navbar Text */
+#page-navbar-text {
+  display: flex;
+}
+@media (width < 768px) {
+  #page-navbar-text {
+    display: none;
+  }
+}
+
+/* * * * * * * * * *
+* The Hero Section *
+* * * * * * * * * */
+
+header {
+  position: relative;
+}
+header > img {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#my-photo {
+  height: 35vh;
+  border-radius: 50%;
+}
+
+#hero-h {
+  color: yellow;
+}
+#hero-p {
+  color: rgb(0, 0, 128);
+  font-weight: 400;
+}
+
+/* * * *
+* Main *
+* * * */
+
+main {
+  background-color: rgb(32, 96, 80);
+}
+.list-group {
+  background-color: inherit;
+}
+.list-group-item {
+  border-style: dotted;
+}
+.list-group-flush>.list-group-item {
+  border-width: 0 0 0.125rem;
+}
+.list-group-item,
+#skills-list,
+.sum-text {
+  background-color: inherit;
+  border-color: wheat;
+  color: wheat;
+}
+.sum-text {
+  text-indent: 1rem;
+  text-align: justify;
+}
+@media (width >= 768px) {
+  .sum-text {
+    line-height: 2rem;
+  }
+  .sum-text > p {
+    margin-bottom: 3rem;
+  }
+}
+
+/* Resume Printing Link */
+h2 > a {
+  font-size: 1rem;
+}
+/* Resume Special Border */
+.section-title-border {
+  border-bottom: 0.25rem dotted black;
+}
+
+/* * * * * * * * *
+* Contact Footer *
+* * * * * * * * */
+
+#page-contact {
+  background-image: url("./assets/sandstone.jpg");
+  background-repeat: repeat-x;
+  background-position: center center;
+  padding-bottom: 1px;
+}
+
+/* * * * * * * * *
+* General Styling *
+* * * * * * * * */
+
+/* Text Shadow Classes */
+.text-sh {
+  text-shadow: 3px 2px 4px white;
+}
+.text-sh-sm {
+  text-shadow: 3px 2px 3px white;
+}
+.text-sh-main {
+  text-shadow: 0px 0px 2px black;
+}
+
+/* Icon Background */
+.icon-bg {
+  padding: 5px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, .75);
+}
+.icon-bg:hover {
+  background-color: rgba(255, 128, 64, .75);
+}
+.link-transition-copy {
+  transition: background-color 0.33s ease-in-out;
+}
+.nav-link {
+  transition-duration: 0.33s;
+}
+.nav-link.disabled {
+  background-color: rgba(0, 0, 0, .25);
+}
