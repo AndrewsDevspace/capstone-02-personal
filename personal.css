@@ -95,6 +95,18 @@ main {
   text-indent: 1rem;
   text-align: justify;
 }
+.project-card-bg-spc {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border: 3px solid black;
+}
+.projects-text {
+  color: wheat;
+}
+.card-a:any-link {
+  text-decoration: none;
+}
 @media (width >= 768px) {
   .sum-text {
     line-height: 2rem;
@@ -136,7 +148,10 @@ h2 > a {
   text-shadow: 3px 2px 3px white;
 }
 .text-sh-main {
-  text-shadow: 0px 0px 2px black;
+  text-shadow:
+    3px 2px .25rem black,
+    3px 2px .5rem black,
+    3px 2px .75rem black;
 }
 
 /* Icon Background */
