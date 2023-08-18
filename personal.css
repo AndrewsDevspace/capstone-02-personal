@@ -95,18 +95,36 @@ main {
   text-indent: 1rem;
   text-align: justify;
 }
+
 .project-card-bg-spc {
+  background-color: rgba(0, 0, 0, 0);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   border: 3px solid black;
 }
+.project-card-bg-spc > * {
+  background-color: inherit;
+}
 .projects-text {
   color: wheat;
 }
+.project-card-bg-spc:hover {
+  background-color: rgba(0, 0, 0, .5);
+  border-color: rgb(255, 128, 64);
+  color: rgb(255, 128, 64);
+}
+.project-card-bg-spc {
+  transition:
+    background-color 0.25s ease-in-out,
+    border-color 0.25s ease-in-out,
+    color 0.25s ease-in-out;
+}
+
 .card-a:any-link {
   text-decoration: none;
 }
+
 @media (width >= 768px) {
   .sum-text {
     line-height: 2rem;
