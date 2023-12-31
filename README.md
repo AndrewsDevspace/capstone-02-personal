@@ -1,4 +1,3 @@
-# capstone-02-personal
-My online Resume - With a couple of my other Portfolio projects.
-
-Second version: a Responsive page made using CSS-3 and Bootstrap-5
+# Capstone Project #02 - Personal Site
+My online Resume, with a couple of Portfolio projects.\
+This second version is a Responsive webpage made with CSS3 and Bootstrap5
